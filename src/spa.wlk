@@ -1,8 +1,8 @@
 import personas.*
 
 object spa {
+	var ultimaPersona 
 	method atender(persona) {
-		var ultimaPersona 
 		persona.recibeMasajes() ; persona.darseUnBanioDeVapor()
 		if(persona == ultimaPersona) {
 			persona.recibeMasajes()

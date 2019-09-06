@@ -37,7 +37,7 @@ object ramiro {
 	
 	method nivelContractura() {return contracturado }
 	method recibirMasajes() { 
-		if(contracturado > 2) {
+		if(contracturado < 2) {
 			contracturado = 0
 		}
 		else {
