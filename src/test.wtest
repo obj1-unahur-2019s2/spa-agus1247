@@ -1,0 +1,23 @@
+import spa.*
+import personas.*
+test "bruno es feliz" {
+ assert.that(bruno.esFeliz())
+	
+}
+
+test "olivia recibe masajes sube 3 de concetracion" {
+	olivia.recibeMasajes()
+	assert.equals(9,olivia.gradoDeConcentracion())
+}
+
+test "ramiro no tiene pielgrasosa cuando se da baño de vapor"{
+	bruno.darseUnBanioDeVapor()
+	assert.equals(false, ramiro.tienePielGrasosa())
+}
+
+test "olivia recibe doble masajes en el spa y discute"{
+	spa.atender(olivia)
+	spa.atender(olivia)
+	olivia.discute()
+	assert.equals(11, olivia.gradoDeConcentracion())
+}
